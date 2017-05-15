@@ -1,20 +1,16 @@
 # How to create a express project step by step
 
-## A: Install the back-end
-## ----------------------------
+## PART A: INSTALL THE BACKEND
 
-### STEP 1º
-### Create a folder with a semanthic name
+### STEP 1º: Create a folder with a semanthic name
 
 ==>  `mkdir expressKata-II`
 
-### STEP 2º
-### Initizalize the npm and use the '-y' especification to be faster and create the ***jason package*** file
+### STEP 2º: Initizalize the npm and use the ***'-y'*** especification to be faster and create the ***jason package*** file
 
 ==>  `npm init --y`
 
-### STEP 3º
-### Install npm
+### STEP 3º: Install npm
 
 Install into the directory (i.e. expressKata-II)
 
@@ -22,48 +18,43 @@ Install into the directory (i.e. expressKata-II)
 
 *the ***'-- save'*** especification indicates that the folder to save is the working directory (on the other hand, the ***'-g'*** especification install the package into the globla scope). But the best thing is that you create the jason package file where there is the info to find the dependencies*
 
-## B: Install the front-end
-## ----------------------------
+## PART B: INSTALL THE FRONTEND
 
-### STEP 4º
-### Inititialite bower
+### STEP 4º: Inititialite bower
 Initizalize the bower package and use the '-y' especification to be faster and create the ***jason package*** file
 
 ==>  `bower init --y`
 
-### STEP 5º
-### Install Bower
+### STEP 5º: Install Bower
 
 ==>  `sudo npm install bower -g`
 
 *In this case we install bower in the global mode ***'-g'***, for that reason if you work with apple computers you should introduce the ***'sudo'*** command in order to access to the user administration.*
 
-### STEP 6º
-### Create a .gitignore file
+### STEP 6º: Create a .gitignore file
 
-The *.gitignore'* file should into the main directory in order to use *'github'* copy and maintain clean the repository from the dependencies as *'node_modules'* or *'bower_components'*
+The ***.gitignore'*** file should into the main directory in order to use ***'github'*** copy and maintain clean the repository from the dependencies as ***'node_modules'*** or ***'bower_components'***
 
 ==>  `touch gitignore`
 
-### STEP 7º
-Introduce into this file the dependencies to avoid be copied into *'github'*:
+### STEP 7º. Save the dependencies
+
+Introduce into the ***.gitignore'*** file the dependencies to avoid be copied into ***'github'***:
 
 ```
 node_modules
 bower_components
 ```
 
-### STEP 8º
-### Create a .bowerrc
+### STEP 8º: Create a .bowerrc
 
-The *'.bowerrc'* file into the main directory in order to choose the path where copying the bower components.
+The ***'.bowerrc'*** file into the main directory in order to choose the path where copying the bower components.
 
-*'github'* copy and maintain clean the repository from the dependencies as *'node_modules'* or *'bower_components'*
+***'github'*** copy and maintain clean the repository from the dependencies as ***'node_modules'*** or ***'bower_components'***
 
 ==>  `touch .bowerrc`
 
-### STEP 9º
-### Complete the .bowerrc file
+### STEP 9º: Complete the .bowerrc file
 Introduce into this file the directory you want to use, for example:
 
 ```
@@ -72,8 +63,7 @@ Introduce into this file the directory you want to use, for example:
 }
 ```
 
-### STEP 10º
-### Install *'the bootstrap librery'*
+### STEP 10º: Install *'the bootstrap librery'*
 
 This librery goes into the working directory using bower install:
 
@@ -82,8 +72,7 @@ This librery goes into the working directory using bower install:
 *With ***'--save'*** you write this dependency into the jason package file where there is the info to find the rest os dependencies*
 
 
-### STEP 11º
-### Install *'the pug package'*
+### STEP 11º: Install *'the pug package'*
 
 This package goes into the working directory using npm istall:
 
@@ -91,8 +80,7 @@ This package goes into the working directory using npm istall:
 
 *With ***'--save'*** you write this dependency into the jason package file where there is the info to find the rest os dependencies*
 
-### STEP 12º
-### Create the firs file app.js.
+### STEP 12º: Create the firs file app.js.
 
 You can use this notation as an example:
 
@@ -113,13 +101,14 @@ app.get('/', (req, res) => {
 app.listen(PORT, () => console.log('listening port 3000'))
 ```
 
-### STEP 13º
-### Create a 'views' directory
+### STEP 13º: Create a 'views' directory
 
 Into this directory create a intex.pug file
 
 `mkdir views`
+
 `cd views`
+
 `touch index.pug`
 
 14º Write somo content into this file as:
@@ -127,8 +116,7 @@ Into this directory create a intex.pug file
 h2 This is the first content
 
 
-### STEP 15ª
-### Add a shorcout to call th server
+### STEP 15ª: Add a shorcout to call th server
 
 Into the package.json file find this piece code:
 
@@ -155,9 +143,8 @@ now (after call 'npm start' into termial') you can go to the browser and write i
 
 And 'voilà'. you have the page index.pug as you create it.
 
----------------------
 
-# How to create a express project step by step
+# How create an express project as fast that you cannot believe
 
 Lets replicate [this bootstrap templete](https://blackrockdigital.github.io/startbootstrap-agency/) with the squeleton we just created.
 **Credits of the template:**
