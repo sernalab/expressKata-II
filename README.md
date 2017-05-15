@@ -2,15 +2,20 @@
 
 ## A: Install the back-end
 
-1º Create a folder with a semanthic name
+### STEP 1º
+### Create a folder with a semanthic name
 
 ==>  `mkdir expressKata-II`
 
-2º Initizalize the npm and use the '-y' especification to be faster and create the ***jason package*** file
+### STEP 2º
+### Initizalize the npm and use the '-y' especification to be faster and create the ***jason package*** file
 
 ==>  `npm init --y`
 
-3º Intall npm into the directory (i.e. expressKata-II)
+### STEP 3º
+### Install npm
+
+Install into the directory (i.e. expressKata-II)
 
 ==>  `npm install express --save`
 
@@ -18,34 +23,46 @@
 
 ## A: Install the front-end
 
-4º Initizalize the bower package and use the '-y' especification to be faster and create the ***jason package*** file
+### STEP 4º
+### Inititialite bower
+Initizalize the bower package and use the '-y' especification to be faster and create the ***jason package*** file
 
 ==>  `bower init --y`
 
-5º Install Bower
+### STEP 5º
+### Install Bower
 
 ==>  `sudo npm install bower -g`
 
 *In this case we install bower in the global mode ***'-g'***, for that reason if you work with apple computers you should introduce the ***'sudo'*** command in order to access to the user administration.*
 
-6º Create a '*.gitignore'* file into the main directory in order to use *'github'* copy and maintain clean the repository from the dependencies as *'node_modules'* or *'bower_components'*
+### STEP 6º
+### Create a .gitignore file
+
+The *.gitignore'* file should into the main directory in order to use *'github'* copy and maintain clean the repository from the dependencies as *'node_modules'* or *'bower_components'*
 
 ==>  `touch gitignore`
 
-7º Introduce into this file the dependencies to avoid be copied into *'github'*:
+### STEP 7º
+Introduce into this file the dependencies to avoid be copied into *'github'*:
 
 ```
 node_modules
 bower_components
 ```
 
-8º Create a *'.bowerrc'* file into the main directory in order to choose the path where copying the bower components.
+### STEP 8º
+### Create a .bowerrc
+
+The *'.bowerrc'* file into the main directory in order to choose the path where copying the bower components.
 
 *'github'* copy and maintain clean the repository from the dependencies as *'node_modules'* or *'bower_components'*
 
 ==>  `touch .bowerrc`
 
-9º Introduce into this file the directory you want to use, for example:
+### STEP 9º
+### Complete the .bowerrc file
+Introduce into this file the directory you want to use, for example:
 
 ```
 {
@@ -53,21 +70,29 @@ bower_components
 }
 ```
 
-10º Install *'the bootstrap librery'* into the working directory using bower install:
+### STEP 10º
+### Install *'the bootstrap librery'*
+
+This librery goes into the working directory using bower install:
 
 ==>  `bower install bootstrap --save`
 
 *With ***'--save'*** you write this dependency into the jason package file where there is the info to find the rest os dependencies*
 
-11º Create a '*.gitignore'* file into the main directory in order to use *'github'* copy and maintain clean the repository from the dependencies as *'node_modules'* or *'bower_components'*
 
-12º Install *'the pug package'* into the working directory using npm istall:
+### STEP 11º
+### Install *'the pug package'*
+
+This package goes into the working directory using npm istall:
 
 ==>  `npm install pug --save`
 
 *With ***'--save'*** you write this dependency into the jason package file where there is the info to find the rest os dependencies*
 
-13º Create the firs file app.js. You can use this notation as an example:
+### STEP 12º
+### Create the firs file app.js.
+
+You can use this notation as an example:
 
 ```
 const express = require("express") // calling express
@@ -86,18 +111,24 @@ app.get('/', (req, res) => {
 app.listen(PORT, () => console.log('listening port 3000'))
 ```
 
-14º Create a 'views' directory and into create a intex.pug file
+### STEP 13º
+### Create a 'views' directory
+
+Into this directory create a intex.pug file
 
 `mkdir views`
 `cd views`
 `touch index.pug`
 
-15º Write somo content into this file as:
+14º Write somo content into this file as:
 
 h2 This is the first content
 
 
-16ª Into the package.json file find this piece code:
+### STEP 15ª
+### Add a shorcout to call th server
+
+Into the package.json file find this piece code:
 
 ```
   "scripts": {
@@ -120,7 +151,7 @@ now (after call 'npm start' into termial') you can go to the browser and write i
 
 `http://localhost:3000`
 
-and voilà. you have the page index.pug as you create it.
+And 'voilà'. you have the page index.pug as you create it.
 
 ---------------------
 
@@ -132,10 +163,10 @@ Copyright 2013-2016 Blackrock Digital LLC.
 `git clone https://github.com/BlackrockDigital/startbootstrap-agency.git`
 
 ![image 1](/screenshots/1.png)
-![image 2](/screenshots/1.png)
-![image 3](/screenshots/1.png)
-![image 4](/screenshots/1.png)
-![image 5](/screenshots/1.png)
+![image 2](/screenshots/2.png)
+![image 3](/screenshots/3.png)
+![image 4](/screenshots/4.png)
+![image 5](/screenshots/5.png)
 
 
 
