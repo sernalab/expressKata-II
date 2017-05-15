@@ -1,6 +1,7 @@
 # How to create a express project step by step
 
 ## A: Install the back-end
+## ----------------------------
 
 ### STEP 1º
 ### Create a folder with a semanthic name
@@ -21,7 +22,8 @@ Install into the directory (i.e. expressKata-II)
 
 *the ***'-- save'*** especification indicates that the folder to save is the working directory (on the other hand, the ***'-g'*** especification install the package into the globla scope). But the best thing is that you create the jason package file where there is the info to find the dependencies*
 
-## A: Install the front-end
+## B: Install the front-end
+## ----------------------------
 
 ### STEP 4º
 ### Inititialite bower
